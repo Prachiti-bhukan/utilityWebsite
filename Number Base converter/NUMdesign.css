@@ -11,6 +11,7 @@
 {
     position: relative;
     top: 20vh;
+     
 }
 .navigation
 {
@@ -87,4 +88,88 @@
      z-index: 1;
 }
  
+}
+
+.main
+{
+    width: 600px;
+     
+     margin: 0 auto;
+     margin-top: 150px;
+      
+   box-shadow: 0px 0px 2px 1px #cacaca;
+    
+    
+}
+.boxes
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+    margin:10px;
+}
+label
+{    font-size: 25px;
+    margin: 10px;
+
+}
+input
+{
+    margin: 10px;
+    width: 450px;
+    height: 50px;
+    font-size: 25px;
+}
+.selection
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+select{
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+     font-size: 25px;
+}
+
+.container
+{
+    padding-bottom: 300px;
+}
+
+@media (max-width: 768px){
+    .main{
+        width: 100%;
+        font-size: 15px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .selection
+    {
+        margin:50px;
+     }
+    .boxes
+    {
+        display: block;
+    margin:50px;
+     }
+    label
+    {
+        font-size: 23px;
+     }
+    input{
+        width:100%;
+        padding: 10px;
+        height: 45px;
+    }
+    select{
+        margin:20px;
+         height: 60px;
+        width:160px;
+        font-size: 25px;
+    }
 }
