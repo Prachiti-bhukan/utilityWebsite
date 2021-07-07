@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Epochdesign.css">
+    <title>Document</title>
+</head>
+<script src="./Epochindex.js"></script>
+<body>
+    <div class="container1">
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="#">Encoder Decoder</a>
+                       <ul>
+                           <li><a href="#">Url encoder/decoder</a></li>
+                           <li><a href="#">String Hashing</a></li>
+                           <li><a href="#">Base64</a></li>
+                       </ul>
+                   </li>
+                    <li><a href="#">RGB Hex</a></li>
+                    <li><a href="#">Time Stap</a></li>
+                    <li><a href="#">Number base</a></li>
+                    <li><a href="#">Text</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="container">
+        <div class="main">
+            <h2>Epoch to Humnan Date Convertor:</h2>
+            <div class="Box1">
+            <label for="epoch">Epoch:</label><input type="text" id="epoch">
+                <button type="submit" id="button1">Epoch to Human Date</button>
+          
+            <!-- <label for="epoch">Epoch:
+            <input type="text" id="epoch"> -->
+
+            <label for="humandate">Human Date:</label>
+            <textarea name="" id="Output_humandate" cols="30" rows="10"></textarea>
+        </div>
+        <h2>Humnan Date to Epoch Convertor:</h2>
+        <div class="Box1">
+            
+             
+            <div class="Box2">
+                <label for="year">Year:</label><input class="human_date" type="text" id="year">
+                <label for="month">Month:</label>
+                <input type="number" min="1" max="12" step="1" name="month" id="mont " class="human_date" placeholder="0" autofocus=" ">
+                <label for="day">Day:<br></label>
+                <input type="number" min="1" max="31" step="1" name="day" id="day" class="human_date" placeholder="0" autofocus=" ">
+            </div>
+            <div class="Box2">
+                <label for="hr ">Hr:</label>
+                <input type="number " min="0" max="23" step="1" name="r" id="hr" class="human_date" placeholder="0" autofocus=" ">
+                <label for="min ">min:</label>
+                <input type="number " min="0" max="60" step="1" name="r" id="min" class="human_date" placeholder="0" autofocus=" ">
+                <label for="sec ">sec:</label>
+                <input type="number " min="0" max="60" step="1" name="r" id="sec" class="human_date" placeholder="0" autofocus=" ">
+                 
+            </div>
+        </div>
+        <div class="Box3">
+        <button type="submit" id="button2">Human date to epoch</button>
+        <label for="EPoch">Epoch ouput:</label>
+        <textarea name=" " id="Epoch_output" cols="30" rows="10"></textarea>
+    </div>
+    </div>
+    </div>
+</div>
+     
+
+     
+    
+</body>
+</html>

@@ -1,0 +1,183 @@
+*{margin: 0; padding: 0;}
+  
+ 
+ body{
+    
+    height : 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+.container1
+{
+    position: relative;
+    top: 20vh;
+     
+}
+.navigation
+{
+    width: 60%;
+    margin: 0 auto;
+    
+    background-color: rgb(5, 5, 5);
+}
+
+.navigation ul
+{
+    display: flex;
+    justify-content:center;
+     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navigation ul li
+{
+    list-style: none;
+    position: relative;
+    padding: 10px 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    border-right: 1px solid rgba( 255, 255,255);
+}
+.navigation ul li:hover
+{ background: #2196f3;
+
+}
+.navigation ul li a
+{text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.navigation ul li ul{
+    position: absolute;
+    background: rgb(7, 7, 7);
+    top: 39px;
+    left: 0;
+    width: 200px;
+    display: block;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navigation ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+.navigation ul li ul li
+{  border-right: none;
+   border-bottom: 1px solid rgba( 255, 255,255);
+}
+
+@media (max-width: 768px)
+{
+    .navigation ul
+{
+    display: block;
+}
+.navigation ul li
+{
+    display: block;
+}
+.navigation ul li ul
+{
+     width: 100%;
+     z-index: 1;
+}
+ 
+}
+
+ .main
+ {
+     margin-top: 70px;
+      
+ }
+
+h2{
+     margin: 2%;
+    text-align: center;
+}
+.Box1
+{ 
+    
+     
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+     align-items: center;
+    font-size: 25px;
+    justify-content: center;
+}
+label
+{
+    font-size: 25px;
+    margin: 20px;
+}
+input
+{
+    margin: 10px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.human_date
+{
+    margin: 8px;
+}
+
+.Box2
+{
+    box-sizing: border-box;
+        margin: 0 auto;
+    display:flex;justify-content:space-evenly;  
+    margin: 30px;
+    flex-wrap: wrap;
+     
+    font-size: 25px;
+     
+}
+textarea{
+    margin:0 auto;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+button
+{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+     
+     
+    font-size: 16px;
+}
+
+.Box3
+{
+     
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+     align-items: center;
+    font-size: 25px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
