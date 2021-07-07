@@ -1,0 +1,147 @@
+ *{margin: 0; padding: 0;}
+ 
+ body{
+    
+    height : 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+.container1
+{
+    position: relative;
+    top: 20vh;
+}
+.navigation
+{
+    width: 60%;
+    margin: 0 auto;
+    
+    background-color: rgb(5, 5, 5);
+}
+
+.navigation ul
+{
+    display: flex;
+    justify-content:center;
+     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navigation ul li
+{
+    list-style: none;
+    position: relative;
+    padding: 10px 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    border-right: 1px solid rgba( 255, 255,255);
+}
+.navigation ul li:hover
+{ background: #2196f3;
+
+}
+.navigation ul li a
+{text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.navigation ul li ul{
+    position: absolute;
+    background: rgb(7, 7, 7);
+    top: 39px;
+    left: 0;
+    width: 200px;
+    display: block;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navigation ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+.navigation ul li ul li
+{  border-right: none;
+   border-bottom: 1px solid rgba( 255, 255,255);
+}
+
+@media (max-width: 768px)
+{
+    .navigation ul
+{
+    display: block;
+}
+.navigation ul li
+{
+    display: block;
+}
+.navigation ul li ul
+{
+     width: 100%;
+     z-index: 1;
+}
+ 
+}
+.container
+{
+    display: grid;
+    box-sizing: border-box;
+    width:100%;
+    justify-content:space-evenly;
+     padding-top: 200px;
+     
+     
+}
+
+.buttons
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button1, .button2{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    font-size: 16px;
+}
+  
+ .Box1{
+     width: 300px;
+     height: 100px;
+     box-sizing: border-box;
+     font-size: 20px;
+     text-align: center;
+      background-color: rgb(179, 173, 173);
+     border: 1px solid black;
+      margin-bottom: 30px;
+      
+ }
+
+ @media (max-width: 768px)
+ {
+     .phone
+     {
+          margin: 0 auto; 
+ }
+ .Box1
+ {
+     width: 200px;
+     height: 100px;
+ }
+
+}
